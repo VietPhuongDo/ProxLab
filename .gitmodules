@@ -1,0 +1,6 @@
+[submodule "NestedCompositionalLayout"]
+	path = NestedCompositionalLayout
+	url = git@github.com:VietPhuongDo/NestedCompositionalLayout.git
+[submodule "PassDataAndGetBack"]
+	path = PassDataAndGetBack
+	url = git@github.com:VietPhuongDo/PassDataAndGetBack.git
