@@ -1,28 +1,34 @@
 //
 //  AppDelegate.swift
-//  RealmCRUDTutorial
+//  Analytics_Crashlytics_RemoteConfig
 //
 //  Created by PhuongDo on 13/12/2023.
 //
 
 import UIKit
-import RealmSwift
 import FirebaseCore
+import FirebaseCrashlytics
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         FirebaseApp.configure()
-        // Override point for customization after application launch.
+        Crashlytics.crashlytics().setCrashlyticsCollectionEnabled(true)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = ViewController() // Replace with your actual root view controller
+        window?.makeKeyAndVisible()
+
         return true
     }
+}
+
 
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 
@@ -33,5 +39,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
-}
+
 
