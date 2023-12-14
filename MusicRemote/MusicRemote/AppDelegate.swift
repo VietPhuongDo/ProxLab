@@ -1,35 +1,27 @@
 //
 //  AppDelegate.swift
-//  Analytics_Crashlytics_RemoteConfig
+//  MusicRemote
 //
-//  Created by PhuongDo on 13/12/2023.
+//  Created by PhuongDo on 14/12/2023.
 //
 
 import UIKit
-import FirebaseCore
-import Firebase
-import FirebaseCrashlytics
 
-@UIApplicationMain
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        FirebaseApp.configure()
-        Crashlytics.crashlytics().setCrashlyticsCollectionEnabled(true)
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = ViewController() // Replace with your actual root view controller
-        window?.makeKeyAndVisible()
-
+        // Override point for customization after application launch.
         return true
     }
-}
-
 
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        // Called when a new scene session is being created.
+        // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 
@@ -40,5 +32,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
-
+}
 
