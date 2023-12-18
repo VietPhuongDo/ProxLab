@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="1.0x"/>
                                 <connections>
-                                    <action selector="speedButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k2d-NA-sJG"/>
+                                    <action selector="speedButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JAR-3j-2dG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9l-yn-kP7">
@@ -31,7 +31,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system" title=""/>
                                 <connections>
-                                    <action selector="playPauseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UD8-eR-J0k"/>
+                                    <action selector="playPauseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tqh-lh-2zp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pd6-HG-CaI">
@@ -40,7 +40,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="stop.fill" catalog="system"/>
                                 <connections>
-                                    <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BpV-5j-f1Q"/>
+                                    <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Diu-bh-W3a"/>
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3tT-vq-WOQ">
@@ -58,7 +58,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Normal"/>
                                 <connections>
-                                    <action selector="loopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AzC-px-tnd"/>
+                                    <action selector="loopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qTc-Pz-j6z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -66,11 +66,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="loopButton" destination="V4V-tW-TVM" id="N5X-AG-IJx"/>
-                        <outlet property="playPauseButton" destination="y9l-yn-kP7" id="95R-Cd-8Ai"/>
-                        <outlet property="speedButton" destination="UUO-AQ-cwS" id="Utc-xn-RBq"/>
-                        <outlet property="stopButton" destination="pd6-HG-CaI" id="dht-io-0hU"/>
-                        <outlet property="timeSlider" destination="3tT-vq-WOQ" id="ITF-R7-3xo"/>
+                        <outlet property="loopButton" destination="V4V-tW-TVM" id="dgj-pj-sor"/>
+                        <outlet property="playPauseButton" destination="y9l-yn-kP7" id="PIf-ir-FpE"/>
+                        <outlet property="speedButton" destination="UUO-AQ-cwS" id="Ybj-NA-yKK"/>
+                        <outlet property="stopButton" destination="pd6-HG-CaI" id="hNh-fl-x8q"/>
+                        <outlet property="timeSlider" destination="3tT-vq-WOQ" id="KGT-RE-m3e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
